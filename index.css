@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#canvas {
+    position: fixed; /* הופך את ה-canvas לקבוע ביחס למסך */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* מציב את ה-canvas מאחורי שאר התוכן */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* התוכן מופיע מעל ה-canvas */
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.center-buttons {
+    display: flex; /* ממקם את הכפתורים זה ליד זה */
+    justify-content: center; /* מרכז את הכפתורים */
+    gap: 20px; /* רווח בין הכפתורים */
+    margin-top: 20px;
+}
+
+.transparent-button {
+    background-color: transparent; /* הכפתור שקוף */
+    border: 2px solid rgb(5, 237, 222); /* מסגרת בצבע המבוקש */
+    color: rgb(5, 237, 222); /* צבע הטקסט */
+    padding: 5px 20px; /* מרווחים פנימיים בתוך הכפתור */
+    font-size: 20px; /* גודל הטקסט */
+    display: flex; /* מסדר את התמונה והטקסט זה לצד זה */
+    align-items: center; /* יישור אנכי של התמונה והטקסט */
+    cursor: pointer; /* הופך את הסמן ליד כאשר עובר על הכפתור */
+    border-radius: 5px; /* עיגול קל של הפינות */
+    transition: all 0.3s ease; /* אנימציה לשינויים בעת hover */
+}
+
+.transparent-button:hover {
+    background-color: rgba(5, 237, 222, 0.1); /* שינוי רקע על hover */
+}
+
+.button-icon {
+    width: 50px; /* רוחב התמונה */
+    height: 50px; /* גובה התמונה */
+    margin-right: 5px; /* רווח בין התמונה לטקסט */
+}
+p{
+    font-size: 50px; /* מגדיל את גודל הטקסט בתוך אלמנט ה-p */
+    margin: 10px;      /* מוסיף מרווח חיצוני */
+
+}
